@@ -1,2 +1,7 @@
-# dlbn.co
-Personal website at [dlbn.co](http://dlbn.co)
+# mohsinbaig.com
+
+Personal site using GatsbyJS
+
+## Contributors
+
+* [Mateus Dal Bianco](https://github.com/dalbinaco)
