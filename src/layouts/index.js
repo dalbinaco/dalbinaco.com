@@ -13,7 +13,6 @@ import messages from './messages'
 
 import twitterLogo from '../assets/img/social/twitter.svg'
 import githubLogo from '../assets/img/social/github.svg'
-import instagramLogo from '../assets/img/social/instagram.svg'
 import linkedinLogo from '../assets/img/social/linkedin.svg'
 
 
@@ -32,7 +31,7 @@ const TemplateWrapper = ({ children }) => {
           title={messages[locale || defaultLocale].meta.title}
           meta={[
             { name: 'description', content: messages[locale || defaultLocale].meta.description },
-            { name: 'keywords', content: 'frontend development, front-end, javascript, react, redux, node.js' },
+            { name: 'keywords', content: 'machine learning, mohsin baig, tensorflow, nlp' },
           ]}>
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -48,7 +47,7 @@ const TemplateWrapper = ({ children }) => {
                 <nav style={{flex: 1}}>
                   <ul className="d-flex justify-content-end list-unstyled m-0 p-0">
                     <li><Link to={`/${locale}/projects`}>{messages[locale || defaultLocale].nav.projects}</Link></li>
-                    <li><Link to={`/${locale}/contact`}>{messages[locale || defaultLocale].nav.contact}</Link></li>
+                    {/* <li><Link to={`/${locale}/contact`}>{messages[locale || defaultLocale].nav.contact}</Link></li> */}
                   </ul>
                 </nav>
               </div>
@@ -63,12 +62,11 @@ const TemplateWrapper = ({ children }) => {
             <div className="container">
               <div className="separator"></div>
               <ul className="row" style={{padding: 0, listStyleType: 'none'}}>
-                <li className="col" style={{flex: 0}}><a href="https://github.com/dalbinaco"><img src={githubLogo} alt="" height="18"/></a></li>
-                <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/dlbnco"><img src={linkedinLogo} alt="" height="18"/></a></li>
-                <li className="col" style={{flex: 0}}><a href="https://instagram.com/dlbnco"><img src={instagramLogo} alt="" height="18"/></a></li>
-                <li className="col" style={{flex: 0}}><a href="https://twitter.com/dlbnco"><img src={twitterLogo} alt="" height="18"/></a></li>
+                <li className="col" style={{flex: 0}}><a href="https://github.com/moebg"><img src={githubLogo} alt="" height="18"/></a></li>
+                <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/moebg"><img src={linkedinLogo} alt="" height="18"/></a></li>
+                <li className="col" style={{flex: 0}}><a href="https://twitter.com/moebgl"><img src={twitterLogo} alt="" height="18"/></a></li>
               </ul>
-              <p className="mb-0">mateus@dalbinaco.com</p>
+              <p className="mb-0">mbaig44@illinois.edu</p>
             </div>
           </footer>
         </div>

@@ -1,8 +1,8 @@
 {
-  "name": "dlbn.co",
+  "name": "mohsinbaig.com",
   "description": "Personal website",
   "version": "0.2.0",
-  "author": "Mateus Dal Bianco <mateus@dalbinaco.com>",
+  "author": "Mohsin Baig <mbaig44@illinois.edu>",
   "dependencies": {
     "axios": "^0.17.1",
     "body-parser": "^1.18.2",

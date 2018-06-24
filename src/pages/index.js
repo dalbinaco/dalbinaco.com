@@ -17,6 +17,7 @@ class IndexPage extends React.Component {
       window.ga('send', 'event', 'Contact', 'Click CTA to go to contact page')
     }
   }
+
   componentDidMount() {
     if (typeof window !== `undefined`) {
       if (window.location.pathname === '/') {
@@ -28,6 +29,8 @@ class IndexPage extends React.Component {
       }
     }
   }
+
+
   render() {
     const messages = this.props.messages
     if (messages) {
@@ -64,21 +67,21 @@ class IndexPage extends React.Component {
             <h3>{messages.about.tech}</h3>
             <Badges skills={[
               {
-                icon: 'react',
-                name: 'React',
+                icon: 'python',
+                name: 'Python',
                 url: 'https://reactjs.org/',
                 color: '#61DAFB'
               },
               {
-                icon: 'redux',
-                name: 'Redux',
+                icon: 'react',
+                name: 'React',
                 url: 'https://redux.js.org/',
                 color: '#61DAFB'
               },
               {
-                icon: 'graphql',
-                name: 'GraphQL',
-                url: 'https://graphql.org/',
+                icon: 'nodejs',
+                name: 'Node.js',
+                url: 'https://nodejs.org/',
                 color: '#61DAFB'
               },
               {
@@ -94,15 +97,15 @@ class IndexPage extends React.Component {
                 color: '#61DAFB'
               },
               {
-                icon: 'gatsby',
-                name: 'Gatsby',
+                icon: 'python',
+                name: 'Python',
                 url: 'https://gatsbyjs.org/',
                 color: '#61DAFB'
               },
               {
-                icon: 'git',
-                name: 'Git',
-                url: 'https://git-scm.com/',
+                icon: 'mysql',
+                name: 'SQL',
+                url: 'https://graphql.org/',
                 color: '#61DAFB'
               },
             ]} />

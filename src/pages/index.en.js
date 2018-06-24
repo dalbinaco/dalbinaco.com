@@ -3,22 +3,21 @@ import IndexPage from './index'
 
 const messages = {
   tagline: {
-    title: 'I build',
+    title: 'I work with',
     services: [
-      'websites', 'web apps', 'beautiful UIs'
+      'machine learning', 'natural language processing', 'deep learning', "c++", "python"
     ],
-    button: `Let's talk!`
+    button: `Twitter`
   },
   about: {
     title: 'About',
     description: (
       <div>
-        <p className="lead">Front-end developer. Creator of <a href="http://tripby.org">tripby.org</a></p>
-        <p>I love technology and how it drives human evolution. I'm excited to be part of this.</p>
-        <p>I'm currently living as a nomad, backpacking through South America.</p>
+        <p className="lead">CS Student @ UIUC. Writing at <a href="https://www.datadevgroup.com">datadevgroup.com</a></p>
+        <p>Working on building the products of the future</p>
       </div>
     ),
-    tech: 'Tech I like to work with'
+    tech: 'Tech I like to work with',
   }
 }
 
