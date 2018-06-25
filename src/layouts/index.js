@@ -29,7 +29,7 @@ const TemplateWrapper = ({ children }) => {
           htmlAttributes={{
             lang: locale || defaultLocale
           }}
-          // title={messages[locale || defaultLocale].meta.title}
+          title={messages[locale || defaultLocale].meta.title}
           meta={[
             { name: 'description', content: messages[locale || defaultLocale].meta.description },
             { name: 'keywords', content: 'machine learning, mohsin baig, tensorflow, nlp' },

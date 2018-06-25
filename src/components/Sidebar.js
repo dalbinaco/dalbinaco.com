@@ -26,7 +26,6 @@ const Sidebar = React.createClass({
               <ul className="row" style={{padding: 0, listStyleType: 'none'}}>
               <li className="col" style={{flex: 0}}><a href="https://github.com/moebg"><img src={githubLogo} alt="" height="24"/></a></li>
               <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/moebg"><img src={linkedinLogo} alt="" height="24"/></a></li>
-              {/* <li className="col" style={{flex: 0}}><a href="https://instagram.com/dalbinaco"><img src={instagramLogo} alt="" height="24"/></a></li> */}
               <li className="col" style={{flex: 0}}><a href="https://twitter.com/moebgl"><img src={twitterLogo} alt="" height="24"/></a></li>
               </ul>
               </div>
