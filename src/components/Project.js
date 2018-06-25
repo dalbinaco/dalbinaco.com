@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import tripbyLogo from '../assets/img/logos/tripby.svg'
 
 const projects = [
-  {"name": "TRIPBY", "url": "http://tripby.org", "logo": tripbyLogo},
+  {"name": "DATADEVGROUP", "url": "http://www.datadevgroup.com", "logo": tripbyLogo},
 ]
 
 const Project = (props) => (

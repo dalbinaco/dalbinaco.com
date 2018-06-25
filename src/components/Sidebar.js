@@ -16,18 +16,17 @@ const Sidebar = React.createClass({
           </div>
           <div className="col-12 col-md-9 col-lg-12">
             <p className="lead">
-              <strong className="text-uppercase">Mateus Dal Bianco</strong><br/>
+              <strong className="text-uppercase">Mohsin Baig</strong><br/>
               </p>
-              <p>Co-fundador do <a href="http://tripby.org">tripby.org</a>. Desenvolvedor front-end.</p>
+              <p>Writing at <a href="https://www.datadevgroup.com">datadevgroup.com</a>.</p>
               <div className="separator" />
               <p>
-              <a href="mailto:mateus@dalbinaco.com">mateus@dalbinaco.com</a>
+              <a href="mailto:mbaig44@illinois.edu">mbaig44@illinois.edu</a>
               </p>
               <ul className="row" style={{padding: 0, listStyleType: 'none'}}>
-              <li className="col" style={{flex: 0}}><a href="https://github.com/dalbinaco"><img src={githubLogo} alt="" height="24"/></a></li>
-              <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/dalbinaco"><img src={linkedinLogo} alt="" height="24"/></a></li>
-              <li className="col" style={{flex: 0}}><a href="https://instagram.com/dalbinaco"><img src={instagramLogo} alt="" height="24"/></a></li>
-              <li className="col" style={{flex: 0}}><a href="https://twitter.com/dalbinaco"><img src={twitterLogo} alt="" height="24"/></a></li>
+              <li className="col" style={{flex: 0}}><a href="https://github.com/moebg"><img src={githubLogo} alt="" height="24"/></a></li>
+              <li className="col" style={{flex: 0}}><a href="https://linkedin.com/in/moebg"><img src={linkedinLogo} alt="" height="24"/></a></li>
+              <li className="col" style={{flex: 0}}><a href="https://twitter.com/moebgl"><img src={twitterLogo} alt="" height="24"/></a></li>
               </ul>
               </div>
             </div>

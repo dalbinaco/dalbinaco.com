@@ -17,19 +17,43 @@ class IndexPage extends React.Component {
       window.ga('send', 'event', 'Contact', 'Click CTA to go to contact page')
     }
   }
+
   componentDidMount() {
-    if (typeof window !== `undefined`) {
-      if (window.location.pathname === '/') {
-        if (navigator.language === 'pt-BR' || navigator.language === 'pt') {
-          window.___history.replace('/pt/')
-        } else {
-          window.___history.replace('/en/')
-        }
+    // if (typeof window !== `undefined`) {
+    //   if (window.location.pathname === '/') {
+    //     if (navigator.language === 'pt-BR' || navigator.language === 'pt') {
+    //       window.___history.replace('/pt/')
+    //     } else {
+    //       window.___history.replace('/en/')
+    //     }
+    //   }
+    // }
+  }
+
+
+  render() {
+    // const messages = this.props.messages
+    
+    // Main Content
+    const messages = {
+      tagline: {
+        title: 'I work with',
+        services: [
+          'machine learning', 'natural language processing', 'deep learning', "c++", "python"
+        ],
+        button: `Github`
+      },
+      about: {
+        title: 'About',
+        description: (
+          <div>
+            <p className="lead">CS Student @ UIUC. Writing at <a href="https://www.datadevgroup.com">datadevgroup.com</a></p>
+            <p>Working on building the products of the future</p>
+          </div>
+        ),
+        tech: 'Tech I like to work with',
       }
     }
-  }
-  render() {
-    const messages = this.props.messages
     if (messages) {
       return (
         <div>
@@ -48,12 +72,8 @@ class IndexPage extends React.Component {
                 </Typist>
               </h1>
             </div>
-            <Link
-              to={`/${this.props.locale}/contact`}
-              className="btn btn-primary mt-3"
-              style={{fontSize: '1.1rem'}}
-              onClick={this.trackCta}
-              >{messages.tagline.button}</Link>
+            {/* Button */}
+              <a href="https://github.com/moebg" className='btn btn-primary mt-3' style={{fontSize: '1.1rem'}} onClick={this.trackCta}>Github</a>
           </section>
           <div className="separator"></div>
           <div>
@@ -64,21 +84,21 @@ class IndexPage extends React.Component {
             <h3>{messages.about.tech}</h3>
             <Badges skills={[
               {
-                icon: 'react',
-                name: 'React',
+                icon: 'python',
+                name: 'Python',
                 url: 'https://reactjs.org/',
                 color: '#61DAFB'
               },
               {
-                icon: 'redux',
-                name: 'Redux',
+                icon: 'react',
+                name: 'React',
                 url: 'https://redux.js.org/',
                 color: '#61DAFB'
               },
               {
-                icon: 'graphql',
-                name: 'GraphQL',
-                url: 'https://graphql.org/',
+                icon: 'nodejs',
+                name: 'Node.js',
+                url: 'https://nodejs.org/',
                 color: '#61DAFB'
               },
               {
@@ -94,15 +114,15 @@ class IndexPage extends React.Component {
                 color: '#61DAFB'
               },
               {
-                icon: 'gatsby',
-                name: 'Gatsby',
+                icon: 'python',
+                name: 'Python',
                 url: 'https://gatsbyjs.org/',
                 color: '#61DAFB'
               },
               {
-                icon: 'git',
-                name: 'Git',
-                url: 'https://git-scm.com/',
+                icon: 'mysql',
+                name: 'SQL',
+                url: 'https://graphql.org/',
                 color: '#61DAFB'
               },
             ]} />
