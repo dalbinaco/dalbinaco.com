@@ -51,12 +51,7 @@ class IndexPage extends React.Component {
                 </Typist>
               </h1>
             </div>
-            <Link
-              to={`/${this.props.locale}/contact`}
-              className="btn btn-primary mt-3"
-              style={{fontSize: '1.1rem'}}
-              onClick={this.trackCta}
-              >{messages.tagline.button}</Link>
+              <a href="https://github.com/moebg" className='btn btn-primary mt-3' style={{fontSize: '1.1rem'}} onClick={this.trackCta}>Github</a>
           </section>
           <div className="separator"></div>
           <div>

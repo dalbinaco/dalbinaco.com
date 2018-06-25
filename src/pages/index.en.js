@@ -7,7 +7,7 @@ const messages = {
     services: [
       'machine learning', 'natural language processing', 'deep learning', "c++", "python"
     ],
-    button: `Twitter`
+    button: `Github`
   },
   about: {
     title: 'About',
