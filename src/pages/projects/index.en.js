@@ -7,7 +7,7 @@ const messages = {
 
 const projects = [
   {
-    title: 'RetailBox',
+    title: 'RetailBozasdddfx',
     url: 'https://github.com/moebg/retailbox',
     description: (
       <div>

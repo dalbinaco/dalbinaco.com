@@ -19,20 +19,41 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
-    if (typeof window !== `undefined`) {
-      if (window.location.pathname === '/') {
-        if (navigator.language === 'pt-BR' || navigator.language === 'pt') {
-          window.___history.replace('/pt/')
-        } else {
-          window.___history.replace('/en/')
-        }
-      }
-    }
+    // if (typeof window !== `undefined`) {
+    //   if (window.location.pathname === '/') {
+    //     if (navigator.language === 'pt-BR' || navigator.language === 'pt') {
+    //       window.___history.replace('/pt/')
+    //     } else {
+    //       window.___history.replace('/en/')
+    //     }
+    //   }
+    // }
   }
 
 
   render() {
-    const messages = this.props.messages
+    // const messages = this.props.messages
+    
+    // Main Content
+    const messages = {
+      tagline: {
+        title: 'I work with',
+        services: [
+          'machine learning', 'natural language processing', 'deep learning', "c++", "python"
+        ],
+        button: `Github`
+      },
+      about: {
+        title: 'About',
+        description: (
+          <div>
+            <p className="lead">CS Student @ UIUC. Writing at <a href="https://www.datadevgroup.com">datadevgroup.com</a></p>
+            <p>Working on building the products of the future</p>
+          </div>
+        ),
+        tech: 'Tech I like to work with',
+      }
+    }
     if (messages) {
       return (
         <div>
@@ -51,6 +72,7 @@ class IndexPage extends React.Component {
                 </Typist>
               </h1>
             </div>
+            {/* Button */}
               <a href="https://github.com/moebg" className='btn btn-primary mt-3' style={{fontSize: '1.1rem'}} onClick={this.trackCta}>Github</a>
           </section>
           <div className="separator"></div>

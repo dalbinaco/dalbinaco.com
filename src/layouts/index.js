@@ -21,6 +21,7 @@ addLocaleData([...en, ...pt,])
 const TemplateWrapper = ({ children }) => {
   const locale = typeof window == `undefined` ? 'en' : window.location.pathname.split('/')[1]
   const defaultLocale = 'en'
+
   return (
     <IntlProvider locale={locale} defaultLocale="en" messages={messages}>
       <div className="d-flex flex-column" style={{minHeight: '100vh'}}>
@@ -28,7 +29,7 @@ const TemplateWrapper = ({ children }) => {
           htmlAttributes={{
             lang: locale || defaultLocale
           }}
-          title={messages[locale || defaultLocale].meta.title}
+          // title={messages[locale || defaultLocale].meta.title}
           meta={[
             { name: 'description', content: messages[locale || defaultLocale].meta.description },
             { name: 'keywords', content: 'machine learning, mohsin baig, tensorflow, nlp' },
@@ -43,11 +44,10 @@ const TemplateWrapper = ({ children }) => {
           <header>
             <div className="container py-4 py-md-5">
               <div className="d-flex align-items-center">
-                <Link to={`/${locale}/`}><h3 className="mb-0" style={{color: 'white'}}>mohsinbaig.com</h3><small className="text-muted">product and data nerd</small></Link>
+                <Link to={`/`}><h3 className="mb-0" style={{color: 'white'}}>mohsinbaig.com</h3><small className="text-muted">product and data nerd</small></Link>
                 <nav style={{flex: 1}}>
                   <ul className="d-flex justify-content-end list-unstyled m-0 p-0">
-                    <li><Link to={`/${locale}/projects`}>{messages[locale || defaultLocale].nav.projects}</Link></li>
-                    {/* <li><Link to={`/${locale}/contact`}>{messages[locale || defaultLocale].nav.contact}</Link></li> */}
+                    <li><Link to={`/en/projects`}>Projects</Link></li>
                   </ul>
                 </nav>
               </div>

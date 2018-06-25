@@ -7,8 +7,6 @@ module.exports = {
     nav: {
       projects: 'Projects',
       about: 'About',
-      // contact: 'Contact'
-
     }
   }
 }
